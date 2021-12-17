@@ -1,0 +1,34 @@
+{
+  "clowns": [
+    {
+      "id": 1,
+      "name": "Buttons"
+    },
+    {
+      "id": 2,
+      "name": "Leslie"
+    }
+  ],
+  "bookings": [
+    {
+      "date": "2021-12-31",
+      "hours": "654",
+      "parent": "654",
+      "child": "654",
+      "attendees": "654",
+      "address": "654",
+      "id": 7
+    }
+  ],
+  "completions": [
+    {
+      "date": "2021-12-31",
+      "hours": "654",
+      "parent": "654",
+      "child": "654",
+      "attendees": "654",
+      "address": "654",
+      "id": 6
+    }
+  ]
+}

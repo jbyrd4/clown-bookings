@@ -1,0 +1,178 @@
+.body {
+    background-color: hotpink;
+    background-image: url("/images/baloonBackground.jpg");
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: skyblue;
+}
+
+.title {
+color: hotpink;
+border: green dotted 10px;
+border-radius: 10px;
+padding: 1em;
+text-align: center;
+background-color: yellow;
+}
+
+.bookingForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hotpink;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input {
+    flex-basis: 60%;
+    background-color: purple;
+    color: hotpink;
+    padding: 5px;
+}
+
+.lists {
+display: flex;
+flex-direction: column;
+
+}
+
+.lists__pending {
+    background-color: greenyellow;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    filter: drop-shadow(10px 10px 5px turquoise)
+}
+
+.lists__completed {
+    background-color:turquoise;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    filter: drop-shadow(10px 10px 5px blue);
+    color: rgb(173, 228, 250);
+}
+
+.removeBullets {
+    list-style-type: none;
+}
+
+.booking__complete {
+background-color: green;
+color: wheat;
+border-radius: 7px;
+padding: 7px;
+width: 6em
+}
+
+.booking__delete {
+    background-color: red;
+    color: wheat;
+    border-radius: 7px;
+    padding: 7px;
+    width: 6em
+}
+
+.completion__delete {
+    background-color: red;
+    color: wheat;
+    border-radius: 7px;
+    padding: 7px;
+    width: 6em
+}
+
+.button__submit {
+    background-color: purple;
+    color: wheat;
+    border-radius: 7px;
+    padding: 7px;
+    width: 10em
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px red;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: url("https://cdn.pixabay.com/photo/2013/07/12/16/50/poodle-151350_960_720.png");
+    background-size: contain;
+    background-repeat: round;
+}
+
+.buttonClown {
+    background-color: maroon;
+    border-radius: 7px;
+    color: wheat;
+    padding: 30px;
+    filter: drop-shadow(10px 10px 5px yellow);
+    border: 5px dotted green;
+    animation: buttonSpin 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+    
+}
+
+.clownImage {
+    min-width: 100vw;
+    animation: clownPulsing 1s linear infinite;
+}
+
+@keyframes clownPulsing {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.1);}
+    50% { transform: scale(1.2);}
+    75% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+@keyframes buttonSpin {
+    0% {transform: rotate(0deg);} 
+    13% {transform: rotate(60deg);} 
+    25% {transform: rotate(90deg);} 
+    42% {transform: rotate(101deg);} 
+    50% { trasform: rotate(180deg);}
+    60% { trasform: rotate(201deg);}
+    75% {transform: rotate(270deg);}
+    90% {transform: rotate(350deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes buttonMove {
+    0% {transform: translate(0vw, 0vh);}
+    25% {transform: translate(70vw, 70vh);}
+    50% {transform: translate(0vw, 70vh);}
+    75% {transform: translate(70vw, 0vh);}
+    100% {transform: translate(0vw, 0vh);}
+}
+
+.buttonMove {
+    animation: buttonMove 5s ease-in-out infinite;
+    position: absolute;
+    top: 12%;
+    left: 2%;
+}
+
+.clownImg {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+}
+
+.clownContainer {
+    min-width: 100vw;
+    position: relative;
+}
